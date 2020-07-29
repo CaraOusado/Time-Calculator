@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hf{
+    width: 100%;
+    background-color: #11f389;
+    text-align: center;
+    color: #7311f3
+}
+
+header{
+    padding: 15px;
+    top: 0;
+    font-size: 22px;
+}
+
+header span{
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+}
+
+footer{
+    position: fixed;
+    padding: 5px;
+    bottom: 0;
+}
