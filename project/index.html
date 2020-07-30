@@ -20,29 +20,32 @@
     <main>
         <h2>Put the Numbers</h2>
 
-        <div id="firstTime" class="time">
-            <input type="text"><label>hrs</label>
-            <input type="text"><label>min</label>
-            <input type="text"><label>sec</label>
-        </div><!--firstTime-->
+        <section class="clock">
+            <div id="firstTime" class="time">
+                <input type="text" maxlength="2"><label>Hrs</label>
+                <input type="text" maxlength="2"><label>Min</label>
+                <input type="text" maxlength="2"><label>Sec</label>
+            </div><!--firstTime-->
 
-        <div class="time addOthers">
-            <input type="text"><label>hrs</label>
-            <input type="text"><label>min</label>
-            <input type="text"><label>sec</label>
-        </div><!--addOthers-->
+            <div class="time addOthers">
+                <input type="text" maxlength="2"><label>Hrs</label>
+                <input type="text" maxlength="2"><label>Min</label>
+                <input type="text" maxlength="2"><label>Sec</label>
+            </div><!--addOthers-->
 
-        <div class="time lastOne">
-            <input type="text"><label>hrs</label>
-            <input type="text"><label>min</label>
-            <input type="text"><label>sec</label>
-        </div><!--lastOne-->
+            <div class="time lastOne">
+                <input type="text" maxlength="2" disabled><label>Hrs</label>
+                <input type="text" maxlength="2" disabled><label>Min</label>
+                <input type="text" maxlength="2" disabled><label>Sec</label>
+            </div><!--lastOne-->
 
-        <div id="interations">
-            <button>ADD</button>
-            <button>SUBTRACT</button>
-            <button>RESET</button>
-        </div><!--interations-->
+            <div id="interactions">
+                <button>ADD</button>
+                <button>SUBTRACT</button>
+                <button>RESET</button>
+                <input type="checkbox"><label>Save</label>
+            </div><!--interations-->
+        </section><!--clock-->
     </main>
 
     <footer class="hf">

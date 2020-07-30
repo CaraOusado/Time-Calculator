@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .hf{
@@ -8,6 +9,10 @@
     background-color: #11f389;
     text-align: center;
     color: #7311f3
+}
+
+input, button{
+    outline: 0;
 }
 
 header{
@@ -22,6 +27,68 @@ header span{
 
 main{
     width: 100%;
+    text-align: center;
+}
+
+main h2{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.clock{
+    border: 2px solid #7311f3;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 300px;
+    padding: 15px;
+}
+
+.time{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.time input{
+    width: 60px;
+    height: 50px;
+    font-size: 25px;
+    padding-left: 12px;
+}
+
+.time label{
+    margin-right: 15px;
+    font-weight: lighter;
+}
+
+.lastOne{
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.lastOne input{
+    background: rgb(243, 17, 92);
+}
+
+#interactions{
+    margin-top: 20px;
+}
+
+#interactions button{
+    cursor: pointer;
+    color: #7311f3;
+    background: rgb(247, 175, 199);
+    border: 1px solid #7311f3;
+    box-shadow: 0px 0px 5px 1px #11f389;
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+#interactions input[type="checkbox"]{
+    margin: 3px;
 }
 
 footer{
