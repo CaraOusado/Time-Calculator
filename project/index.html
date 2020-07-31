@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/all.css">
     <script src="js/all.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -21,22 +22,20 @@
         <h2>Put the Numbers</h2>
 
         <section class="clock">
-            <div id="firstTime" class="time">
-                <input type="text" maxlength="2"><label>Hrs</label>
-                <input type="text" maxlength="2"><label>Min</label>
-                <input type="text" maxlength="2"><label>Sec</label>
+            <div id="firstTime" class="time somable">
+                <input type="text" class="h" maxlength="2"><label>Hrs</label>
+                <input type="text" class="m" maxlength="2"><label>Min</label>
+                <input type="text" class="s" maxlength="2"><label>Sec</label>
             </div><!--firstTime-->
 
-            <div class="time addOthers">
-                <input type="text" maxlength="2"><label>Hrs</label>
-                <input type="text" maxlength="2"><label>Min</label>
-                <input type="text" maxlength="2"><label>Sec</label>
-            </div><!--addOthers-->
+            <div class="addNumber">
+                <span id="addNumber">+</span>
+            </div><!--addNumber-->
 
-            <div class="time lastOne">
-                <input type="text" maxlength="2" disabled><label>Hrs</label>
-                <input type="text" maxlength="2" disabled><label>Min</label>
-                <input type="text" maxlength="2" disabled><label>Sec</label>
+            <div id="lastOne" class="time">
+                <input type="text" class="h" maxlength="2" disabled><label>Hrs</label>
+                <input type="text" class="m" maxlength="2" disabled><label>Min</label>
+                <input type="text" class="s" maxlength="2" disabled><label>Sec</label>
             </div><!--lastOne-->
 
             <div id="interactions">

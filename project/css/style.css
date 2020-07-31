@@ -28,6 +28,7 @@ header span{
 main{
     width: 100%;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 main h2{
@@ -63,13 +64,31 @@ main h2{
     font-weight: lighter;
 }
 
-.lastOne{
-    margin: 0 auto;
-    margin-top: 40px;
+.addNumber{
+    margin: 20px 0;
+    position: relative;
+    padding: 15px;
 }
 
-.lastOne input{
+#addNumber{
+    font-size: 25px;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 64%;
+    transform: translateY(-50%);
+}
+
+#lastOne{
+    margin: 0 auto;
+}
+
+#lastOne input{
     background: rgb(243, 17, 92);
+    color: #11f389;
 }
 
 #interactions{
