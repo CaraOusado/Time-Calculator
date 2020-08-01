@@ -57,31 +57,36 @@ window.onload = function(){
 
         //Starting the hardest piece
         let final = [];
+        let number;
 
         //Trying to sort by hour, minute and second
         for(let num = 0; num < arr[0].length; num++){
             final[num] = 0;
             for(let n = 0; n < arr.length; n++){
 
+                
                 if(isNaN(parseInt(arr[n][num].value))){
-                    arr[n][num].value = 0;
+                    number = 0;
+                }else{
+                    number = parseInt(arr[n][num].value)
                 }
 
 
                 switch(action){
                     case 'ADD':
-                        final[num] += parseInt(arr[n][num].value);
-
+                        final[num] += number;
+                        arr[n][num].value = '';
                         break;
+
                     case 'SUBTRACT':
                         if(n == 0){
-                            final[num] = parseInt(arr[n][num].value);
+                            final[num] = number;
                         }else{
-                            final[num] -= parseInt(arr[n][num].value);
+                            final[num] -= number;
                         }
-
-                        //if(isNaN(final[num])){final[num] = 0;}
+                        arr[n][num].value = '';
                         break;
+
                     case 'RESET':
                         arr[n][num].value = '';
                         break;
@@ -99,6 +104,9 @@ window.onload = function(){
 
             for(i of document.getElementById(id).children){
                 if(i instanceof HTMLInputElement){
+                    if(time[index] === 0){
+                        time[index] = '';
+                    }
                     i.value = time[index];
                     index++;
                 }
